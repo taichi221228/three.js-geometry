@@ -15,10 +15,7 @@ const { width, height } = { width: 1472, height: 864 };
 
 const { canvas } = (() => {
 	const app = document.getElementById("app");
-	return {
-		app,
-		canvas: app.querySelector("canvas"),
-	};
+	return { app, canvas: app.querySelector("canvas") };
 })();
 
 const renderer = new WebGLRenderer();
