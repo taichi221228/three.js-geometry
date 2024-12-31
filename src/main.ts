@@ -19,7 +19,7 @@ import {
 	WebGLRenderer,
 } from "three";
 
-const { width, height } = { width: 1472, height: 864 };
+const { width, height } = { width: 1252, height: 864 };
 
 const { canvas } = (() => {
 	const app = document.getElementById("app");
@@ -53,10 +53,10 @@ const geometries = [
 	new SphereGeometry(50),
 	new BoxGeometry(100, 100, 100),
 	new PlaneGeometry(100, 100),
-	new TetrahedronGeometry(100, 0),
-	new ConeGeometry(100, 100, 32),
-	new CylinderGeometry(50, 50, 100, 32),
-	new TorusGeometry(50, 30, 16, 100),
+	new TetrahedronGeometry(100),
+	new ConeGeometry(100, 100),
+	new CylinderGeometry(50, 50, 100),
+	new TorusGeometry(50, 30),
 ];
 geometries.map((geometry, index) => {
 	const mesh = new Mesh(geometry, material);
