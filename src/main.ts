@@ -2,7 +2,6 @@ import "./style.css";
 import {
 	AmbientLight,
 	BoxGeometry,
-	Camera,
 	ConeGeometry,
 	CylinderGeometry,
 	DirectionalLight,
@@ -10,6 +9,7 @@ import {
 	Mesh,
 	MeshStandardMaterial,
 	Object3D,
+	PerspectiveCamera,
 	PlaneGeometry,
 	Scene,
 	SphereGeometry,
@@ -31,7 +31,7 @@ renderer.setSize(width, height);
 
 const scene = new Scene();
 
-const camera = new Camera();
+const camera = new PerspectiveCamera(60, width / height, 1, 10000);
 camera.position.set(0, 500, 1000);
 camera.lookAt(new Vector3(0, 0, 0));
 
