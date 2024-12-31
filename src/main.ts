@@ -54,7 +54,7 @@ const geometries = [
 	new BoxGeometry(100, 100, 100),
 	new PlaneGeometry(100, 100),
 	new TetrahedronGeometry(100),
-	new ConeGeometry(100, 100),
+	new ConeGeometry(50, 150),
 	new CylinderGeometry(50, 50, 100),
 	new TorusGeometry(50, 30),
 ];
