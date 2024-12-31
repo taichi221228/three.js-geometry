@@ -18,7 +18,7 @@ const { canvas } = (() => {
 	return { app, canvas: app.querySelector("canvas") };
 })();
 
-const renderer = new WebGLRenderer();
+const renderer = new WebGLRenderer({ canvas });
 renderer.setSize(width, height);
 
 const scene = new Scene();
